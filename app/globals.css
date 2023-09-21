@@ -8,20 +8,86 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+
+
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  } */
+  
+
+
+html {
+  font-family: var(--font-caudex);
 }
+
+p {
+  font-family: var(--font-inter);
+}
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+
+
+
+
+/* styles.css or your global CSS file */
+.begin-btn {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Adjust as needed for full radius */
+  font-size: 16px; /* Adjust as needed */
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s; /* Added transition for background color */
+}
+
+.begin-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(91deg, #25BA00 0.94%, #167100 99.59%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 50px; /* Adjust as needed for full radius */
+}
+
+.begin-btn span {
+  position: relative;
+  z-index: 20; /* Added z-index to keep text above gradient */
+}
+
+.begin-btn:hover {
+  background-color: transparent;
+}
+
+.begin-btn:hover::after {
+  opacity: 1;
+}
+
+
