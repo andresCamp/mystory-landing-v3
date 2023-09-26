@@ -22,6 +22,10 @@ export default function Home() {
 
       <PricingSection />
 
+      <div className='flex flex-row gap-3 items-first justify-center text-center text-3xl'>
+                Let us do the work <br/>So you can spend more time with the ones you love
+            </div>
+
       <div className="absolute bottom-0 w-full h-[700px] -mb-20"> {/* Adjust the height as needed */}
         <Image
           src={footerImg}

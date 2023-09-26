@@ -1,11 +1,11 @@
 import React from 'react'
 
 const data = [
-    { titleL: '', descL: '', titleR: 'Select a Journey', descR: 'Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.' },
-    { titleL: 'Complete Questionnaire', descL: 'Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.', titleR: '', descR: '' },
-    { titleL: '', descL: '', titleR: 'Review Questions', descR: 'Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.' },
-    { titleL: 'Schedule Interview', descL: 'Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.', titleR: '', descR: '' },
-    { titleL: '', descL: '', titleR: 'Complete Interview', descR: 'Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.' },
+    { titleL: '', descL: '', titleR: 'Select a Journey', descR: 'Begin by choosing a Journey type that resonates with you. You can tell your own life story, the life story of a loved one who has passed, or help someone tell theirs' },
+    { titleL: 'Story Starter', descL: "Upon selecting a Journey, you'll be directed to a personalized questionnaire. Your responses will aid our team in crafting questions tailored to your or your loved one's life story", titleR: '', descR: '' },
+    { titleL: '', descL: '', titleR: 'Review Questions', descR: 'After you complete your Questionnaire, you will receive a link to your Interview Questions. This will give you the chance to prepare for your scheduled Interview.' },
+    { titleL: 'Tell your Story', descL: 'Sit back, relax, and chat about your life with a MyStory professional interviewer. Conducted via video chat, all you need is a laptop, a charger, and we recommend a glass of water.', titleR: '', descR: '' },
+    { titleL: '', descL: '', titleR: 'Recieve Edited Story', descR: 'Just a week post-interview, your edited life story will be delivered to you! It will arrive as a private link, making sharing with loved ones easy and seamless.' },
   ];
   
 
@@ -54,7 +54,7 @@ const Timeline = () => {
     </div>
         <div className="w-96 text-center mt-5">
             <h1 className='text-3xl font-bold'>Enjoy & Share</h1>
-            <p className=' text-stone-500'>Start by making Backyard yours. Choose your layout, colors, windows, doors, decks, interior, roof, and solar.</p>
+            <p className=' text-stone-500'>Relish in the beautiful narrative of your or your loved one&apos;s life, and share this precious legacy with whomever you choose, creating a timeless bond with generations to come.</p>
         </div>
   </div>
   )

@@ -6,6 +6,8 @@ import footerImg from "/public/footerImg.png"
 const FooterSection = () => {
     return (
         <div className="relative w-full h-[300px]"> {/* Adjust the height value as needed */}
+         
+            
         <Image
           src={footerImg}
           alt=''
