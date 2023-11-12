@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div className='h-screen w-screen flex flex-col justify-center bg-[#F1F1EA] absolute top-0 left-0'> 
           <motion.div 
-            className='flex flex-col gap-16 sm:gap-8 items-center sm:items-start mt-16 mx-12 sm:mx-20'
+            className='flex flex-col gap-16 sm:gap-8 items-center sm:items-start mt-16 mx-8 sm:mx-20'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.8 }}
