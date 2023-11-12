@@ -15,7 +15,7 @@ interface JourneyCardTypes {
 
 const JourneyCard: React.FC<JourneyCardTypes> = ({title, src, desc1, desc2, desc3, popupId}) => {
   return (
-    <div className='bg-white flex flex-col gap-6 text-center items-center justify-center rounded-xl shadow-lg px-2 py-4'>
+    <div className='bg-white flex flex-col gap-6 text-center items-center justify-center rounded-xl shadow-lg px-0 py-4'>
         <Image
             src={src}
             alt=''

@@ -49,6 +49,8 @@ p {
 
 
 
+
+
 /* styles.css or your global CSS file */
 .begin-btn {
   position: relative;
@@ -88,6 +90,38 @@ p {
 
 .begin-btn:hover::after {
   opacity: 1;
+}
+
+
+
+
+
+
+.waitlist-btn {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Adjust as needed for full radius */
+  font-size: 16px; /* Adjust as needed */
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s; /* Added transition for background color */
+}
+
+.waitlist-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #12375A;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 50px; /* Adjust as needed for full radius */
 }
 
 
