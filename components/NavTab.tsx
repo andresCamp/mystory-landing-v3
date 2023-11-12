@@ -68,7 +68,7 @@ const NavTab: React.FC = () => {
   
 
   return (
-    <div className="flex flex-wrap gap-4 font-sans sticky bottom-8 sm:bottom-16 inset-x-0 justify-center sm:py-4">
+    <div className="flex flex-wrap gap-4 font-sans fixed bottom-8 sm:bottom-16 inset-x-0 justify-center sm:py-4">
         <Tabs 
           color={"primary"} 
           aria-label="Tabs colors" 

@@ -46,7 +46,10 @@ p {
 }
 
 
-
+/* In your styles.css file */
+.gradient-footer {
+  background-image: linear-gradient(180deg, rgba(170, 170, 136, 0.00) 1.58%, #AAAA88 30.79%);
+}
 
 
 

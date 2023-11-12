@@ -44,6 +44,9 @@ const HomePage = () => {
         />
       </div>
 
+      {/* <div className='gradient-footer flex text-white p-1 justify-center absolute bottom-0 -mb-20 w-screen'>
+      © 2023 MyStory Inc.
+      </div> */}
       <div className='flex text-white p-1 justify-center absolute bottom-0 -mb-20 backdrop-blur w-screen'>
       © 2023 MyStory Inc.
       </div>

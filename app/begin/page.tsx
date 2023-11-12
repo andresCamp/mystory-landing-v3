@@ -3,12 +3,12 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='h-screen flex flex-col gap-10 items-center justify-center bg-[#DEDFCD]'>
+    <div className='sm:h-screen flex flex-col gap-10 items-center justify-center py-32 px-8 bg-[#DEDFCD]'>
 
-        <h1 className='text-6xl font-bold'>Select your Journey</h1>
+        <h1 className='text-4xl sm:text-6xl font-bold text-center'>Select your Journey</h1>
 
-        <div className='flex flex-row gap-8'>
-            <div className='w-1/3'>
+        <div className='flex flex-col sm:flex-row gap-8'>
+            <div className='sm:w-1/3'>
                 <JourneyCard
                     popupId="HYYXINuK"
                     title="Help Someone Tell Their Life Story"
@@ -19,7 +19,7 @@ const page = () => {
                 />
             </div>
 
-            <div className='w-1/3'>
+            <div className='sm:w-1/3'>
                 <JourneyCard
                     popupId="WFvrrE0T"
                     title="Tell My Life Story"
@@ -30,7 +30,7 @@ const page = () => {
                 />
             </div>
 
-            <div className='w-1/3'>
+            <div className='sm:w-1/3'>
                 <JourneyCard
                     popupId="g5ZGhqBw"
                     title="Tell the Life Story of a Deceased Loved One"
