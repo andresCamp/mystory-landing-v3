@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Arrow from '../../../public/arrow.svg'
+import Arrow from '../../../public/Arrow.svg'
 import Image from 'next/image'
 import { inter } from '../../fonts'
 
