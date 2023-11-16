@@ -9,24 +9,6 @@ const inter = Inter({ subsets: ['latin'], variable:'--font-inter', weight: ['300
 const caudex = Caudex({ subsets: ['latin'], variable:'--font-caudex', weight: ['400', '700'] })
 
 
-
-// const inter = Inter({ 
-//   subsets: ['latin'], 
-//   variable:'--font-inter', 
-//   weight: ['300','400', '700'] 
-// })
-
-// const caudex = Caudex({ 
-//   subsets: ['latin'], 
-//   variable:'--font-caudex', 
-//   weight: ['400', '700'] 
-// })
-
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
-
 export const metadata: Metadata = {
   title: 'MyStory',
   description: 'Your Legacy, Their Treasure',
