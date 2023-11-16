@@ -33,7 +33,7 @@ const MissionCard: React.FC<MissionCardProps> = ({title, description, image}) =>
                     />
             )}
             <h2 className="text-5xl sm:text-6xl text-center text-white z-10">{titleParts}</h2>
-            <h3 className='absolute bottom-0 right-0 text-stone-400 m-12 text-lg z-10'>{description}</h3>
+            <h3 className='absolute bottom-0 sm:right-0 text-stone-400 m-24 w-2/3 sm:w-auto  text-center sm:m-12 text-lg z-10'>{description}</h3>
         </div>
 
 
