@@ -25,6 +25,7 @@ const MissionCard: React.FC<MissionCardProps> = ({title, description, image}) =>
                         src={image}
                         fill
                         sizes="100vw"
+                        placeholder='blur'
                         style={{
                           objectFit: 'cover',
                         }}                        
