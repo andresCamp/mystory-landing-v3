@@ -1,13 +1,15 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react'
+import MissionCardTitle from './MissionCardTitle';
 
 interface MissionCardProps {
     title: string;
     description: string;
     image?: StaticImageData;
+    delay?: number;
     }
 
-const MissionCard: React.FC<MissionCardProps> = ({title, description, image}) => {
+const MissionCard: React.FC<MissionCardProps> = ({title, description, image, delay}) => {
 
     const titleParts = title.split('|').map((part, index) => (
         <span key={index}>
@@ -28,16 +30,17 @@ const MissionCard: React.FC<MissionCardProps> = ({title, description, image}) =>
                         placeholder='blur'
                         style={{
                           objectFit: 'cover',
-                        }}                        
+                        }}            
                         alt=""
                     />
             )}
-            <h2 className="text-5xl sm:text-6xl text-center text-white z-10">{titleParts}</h2>
+            <MissionCardTitle title={titleParts} delay={delay} />
             <h3 className='absolute bottom-0 sm:right-0 text-stone-400 m-24 w-2/3 sm:w-auto  text-center sm:m-12 text-lg z-10'>{description}</h3>
         </div>
 
 
 
+// {/* <h2 className="text-5xl sm:text-6xl text-center text-white z-10">{titleParts}</h2> */}
 
 
     // <div>

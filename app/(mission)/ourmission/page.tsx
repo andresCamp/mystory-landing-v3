@@ -6,6 +6,7 @@ import Napoleon from '../../../public/MissionImages/Napoleon.png'
 import WrightBrothers from '../../../public/MissionImages/WrightBrothers.png'
 import Earthrise from '../../../public/MissionImages/Earthrise.png'
 import TornPhoto from '../../../public/MissionImages/TornPhoto.png'
+
 // import CuevaManos from '@MissionImages/CuevaManos.png'
 
 //la fille aux pouvoirs magiques
@@ -14,14 +15,17 @@ const page = () => {
   return (
     // <div className='flex flex-col  snap-y snap-mandatory overflow-y-auto scroll-smooth  items-center justify-center bg-[#000000]'>
 
-    <div className="relative h-screen flex-col snap-y snap-mandatory scroll-smooth overflow-y-auto ">
+    <div className="relative h-screen bg-black flex-col snap-y snap-mandatory scroll-smooth overflow-y-auto ">
+      
       
       <section className="snap-start shrink-0">
         <MissionCard
           title="The next paradigm in human connection | is storytelling"
           description=""
+          delay={0}
         />
       </section>
+
 
       <section className="snap-start shrink-0">
         <MissionCard
