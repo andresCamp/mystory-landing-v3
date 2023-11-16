@@ -15,14 +15,23 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-begin': 'linear-gradient(91deg, #25BA00 0.94%, #167100 99.59%)',
+        'begin-gradient': 'linear-gradient(128deg, #90DEFF 26%, #63C6F0 45.95%, #1EA0D8 75.11%)',
       },
       boxShadow: {
         'white': '0px 0px 30px 0px #FFF',
+        'begin-shadow': '0px 10px 15px 0px rgba(74, 190, 240, 0.50)',
       },
       colors: {
-        primary: '#A9A987'
+        primary: '#A9A987',
+        tan: '#DEDFCD',
+        navy: '#12375A',
+        blue: '#26ABE4',
+      },
+      fontFamily: {
+        primary: ['var(--font-caudex)'],
+        secondary: ['var(--font-inter)'],
       }
     },
   },

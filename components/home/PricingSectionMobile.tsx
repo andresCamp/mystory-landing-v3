@@ -1,5 +1,6 @@
 import React from 'react'
 import BeginButton from '../buttons/BeginButton'
+import {inter} from '../../app/fonts'
 
 const PricingSection = () => {
   return (
@@ -28,7 +29,7 @@ const PricingSection = () => {
                         {/* Bottom column */}
                         <div className="flex flex-col gap-3 justify-start items-center text-center">
                             <h1 className='text-2xl font-bold'>What You Get</h1>
-                            <p className='text-md text-stone-500'>Tailored interview questions<br/>One-on-one interview<br/>Edited life story video</p>
+                            <p className={`text-md text-stone-500 ${inter.className}`}>Tailored interview questions<br/>One-on-one interview<br/>Edited life story video</p>
                         </div>
                     </div>
                 </div>

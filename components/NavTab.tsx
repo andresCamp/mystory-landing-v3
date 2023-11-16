@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Tabs, Tab } from "@nextui-org/react";
 import { usePathname, useRouter } from "next/navigation";
+import {inter} from '../app/fonts'
 
 const NavTab: React.FC = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const NavTab: React.FC = () => {
       case '/begin':
         setSelected('1');
         break;
-      case '/ourstory':
+      case '/ourmission':
         setSelected('2');
         break;
       default:
@@ -58,7 +59,7 @@ const NavTab: React.FC = () => {
           router.push('/begin');
           break;
         case '2':
-          router.push('/ourstory');
+          router.push('/ourmission');
           break;
         default:
           break;
@@ -68,7 +69,8 @@ const NavTab: React.FC = () => {
   
 
   return (
-    <div className="flex flex-wrap gap-4 font-sans fixed bottom-8 sm:bottom-16 inset-x-0 justify-center sm:py-4">
+    // <div className="flex flex-wrap gap-4 font-sans fixed bottom-8 sm:bottom-16 inset-x-0 justify-center sm:py-4">
+    <div className={`flex flex-wrap gap-4  ${inter.className} fixed bottom-8 inset-x-0 justify-center sm:py-4`}>
         <Tabs 
           color={"primary"} 
           aria-label="Tabs colors" 
@@ -79,7 +81,7 @@ const NavTab: React.FC = () => {
         >
           <Tab key="0" title="Home"></Tab>
           <Tab key="1" title="Begin Journey"></Tab>
-          <Tab key="2" title="Our Story"></Tab>
+          <Tab key="2" title="Our Mission"></Tab>
         </Tabs>
 
      

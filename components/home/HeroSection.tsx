@@ -4,6 +4,7 @@ import Image from 'next/image'
 import heroHands from "/public/heroHands.png"
 import { AnimatePresence, motion } from 'framer-motion'
 import WaitlistButton from '../buttons/WaitlistButton'
+import { inter } from '../../app/fonts'
 
 const HeroSection = () => {
   return (
@@ -16,8 +17,8 @@ const HeroSection = () => {
             exit={{ opacity: 0 }}
           > 
               <div className='flex flex-col gap-3'>
-                <h1 className='font-bold text-4xl text-center sm:text-left sm:text-8xl'>Your Legacy,<br /> Their Treasure:<br /> The Ultimate Gift</h1>
-                <h2 className=' sm:text-3xl text-2xl text-center sm:text-left font-light text-stone-700'>Capture your loved one’s life story as a video with MyStory</h2>
+                <h1 className='font-bold font-primary text-4xl text-center sm:text-left sm:text-8xl'>Your Legacy,<br /> Their Treasure,<br /> The Ultimate Gift.</h1>
+                <h2 className={`sm:text-2xl text-2xl px-3 ${inter.className} text-center sm:text-left font-thin text-stone-700`}>Capture your loved one’s life story as a video with MyStory</h2>
               </div>
               <BeginButton />
               {/* <WaitlistButton /> */}
@@ -29,6 +30,7 @@ const HeroSection = () => {
             alt=''
             className='w-1/2 absolute top-0 right-0 '
         />
+
       </div>
     </div>
 

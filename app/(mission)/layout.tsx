@@ -1,8 +1,10 @@
 import NavBar from '@/components/NavBar'
-import './globals.css'
+import NavBarMission from './components/NavBarMission'
+import JoinBetaCTA from './components/JoinBetaCTA'
+import '../global.css'
 import type { Metadata } from 'next'
 import { Inter, Caudex } from 'next/font/google'
-import Providers from './providers'
+import Providers from '../providers'
 import NavTab from '@/components/NavTab'
 
 
@@ -24,11 +26,29 @@ export default function RootLayout({
     <html lang="en" className={`${caudex.variable} ${inter.variable}`}>
         <body>
           <Providers>
-            <NavBar/>
+            <NavBarMission/>
+            {/* <NavBar/> */}
             {children}
-            <NavTab/>
+            {/* <NavTab/> */}
+            <JoinBetaCTA/>
           </Providers>
         </body>
       </html>
   )
 }
+
+
+
+
+
+// export default function OurMissionLayout({
+//     children, // will be a page or nested layout
+//   }: {
+//     children: React.ReactNode
+//   }) {
+//     return (
+//       <section>
+//          {children}
+//       </section>
+//     )
+//   }
