@@ -5,7 +5,7 @@ import {inter} from '../../app/fonts'
 const PricingSection = () => {
   return (
     <div>
-        <div className='flex flex-col items-center gap-28 my-16 py-28 bg-[#DEDFCD] h-screen w-screen'>
+        <div className='flex flex-col items-center justify-center gap-28 my-16  bg-[#DEDFCD] h-screen w-screen'>
 
             {/* <div className='flex flex-col items-center gap-12 '> */}
 
@@ -32,10 +32,13 @@ const PricingSection = () => {
                             <p className={`text-md text-stone-500 ${inter.className}`}>Tailored interview questions<br/>One-on-one interview<br/>Edited life story video</p>
                         </div>
                     </div>
+                    
+                    <div className='flex items-center justify-center'>
+                        <BeginButton />
+                    </div>
                 </div>
 
 
-                <BeginButton />
             {/* </div> */}
 
 

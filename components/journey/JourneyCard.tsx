@@ -24,7 +24,7 @@ const JourneyCard: React.FC<JourneyCardTypes> = ({title, src, desc1, desc2, desc
 ));
   
   return (
-    <div className='bg-white flex h-full  flex-col gap-3 text-center items-center justify-center rounded-lg shadow-lg px-2 pb-4'>
+    <div className='bg-white flex h-full  flex-col gap-5 text-center items-center justify-center rounded-lg shadow-lg px-3 sm:px-6 pb-6'>
         <Image
             src={src}
             alt=''
@@ -32,7 +32,7 @@ const JourneyCard: React.FC<JourneyCardTypes> = ({title, src, desc1, desc2, desc
             height={180}
         />
         
-        <h1 className='text-sm text-[#4E4E4E]'>{titleParts}</h1>
+        <h1 className='text-md text-[#4E4E4E] whitespace-nowrap'>{titleParts}</h1>
 
         {/* <ul className={`list-disc font-light text-left text-sm ${inter.className}`}>
             <li><p>{desc1}</p></li>

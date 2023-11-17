@@ -13,7 +13,8 @@ const MissionCardTitle: React.FC<MissionCardTitleProps> = ({title, delay = .8}) 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.8, delay: delay }}
-        viewport={{once: true}}
+        // viewport={{once: true}}
+        exit={{ opacity: 0 }}
         className='z-50'
         > 
             <h2 className="text-5xl sm:text-6xl text-center text-white z-50">
