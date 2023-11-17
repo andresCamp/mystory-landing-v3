@@ -24,21 +24,21 @@ const JourneyCard: React.FC<JourneyCardTypes> = ({title, src, desc1, desc2, desc
 ));
   
   return (
-    <div className='bg-white flex h-full  flex-col gap-4 text-center items-center justify-between rounded-xl shadow-lg px-8 py-4'>
+    <div className='bg-white flex h-full  flex-col gap-3 text-center items-center justify-center rounded-lg shadow-lg px-2 pb-4'>
         <Image
             src={src}
             alt=''
-            width={200}
-            height={200}
+            width={180}
+            height={180}
         />
         
-        <h1 className='text-xl px-1'>{titleParts}</h1>
+        <h1 className='text-sm text-[#4E4E4E]'>{titleParts}</h1>
 
-        <ul className={`list-disc font-light text-left text-sm ${inter.className}`}>
+        {/* <ul className={`list-disc font-light text-left text-sm ${inter.className}`}>
             <li><p>{desc1}</p></li>
             <li><p>{desc2}</p></li>
             <li><p>{desc3}</p></li>
-        </ul>
+        </ul> */}
 
       <TypeformPopup
         formId={popupId}

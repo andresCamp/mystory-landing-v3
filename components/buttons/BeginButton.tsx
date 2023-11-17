@@ -5,7 +5,7 @@ import { caudex } from '../../app/fonts'
 const BeginButton = () => {
   return (
       <Link href={"/begin"} >
-        <div className={`bg-navy  text-white rounded-full flex px-14 py-4 transition-all duration-500 hover:bg-begin-gradient hover:scale-105 hover:shadow-begin-shadow`}>
+        <div className={`bg-navy  text-white rounded-full flex px-14 py-4 transition-all duration-500 hover:bg-begin-gradient hover:scale-105 hover:shadow-begin-shadow-hover`}>
         {/* <div className='cta-btn'> */}
           <span className='text-xl font-thin'>
             <p className={`font-medium ${caudex.className}`}>

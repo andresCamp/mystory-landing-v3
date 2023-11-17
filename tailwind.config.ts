@@ -21,7 +21,8 @@ const config: Config = {
       },
       boxShadow: {
         'white': '0px 0px 30px 0px #FFF',
-        'begin-shadow': '0px 10px 15px 0px rgba(74, 190, 240, 0.50)',
+        'begin-shadow': '0px 5px 5px 0px rgba(74, 190, 240, .5)',
+        'begin-shadow-hover': '0px 10px 15px 0px rgba(74, 190, 240, 0.50)',
       },
       colors: {
         primary: '#A9A987',
