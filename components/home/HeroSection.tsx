@@ -1,7 +1,7 @@
 import React from 'react'
 import BeginButton from '../buttons/BeginButton'
 import Image from 'next/image'
-import heroHands from "/public/heroHands3.png"
+import heroHands from "/public/heroHands.png"
 import { AnimatePresence, motion } from 'framer-motion'
 import WaitlistButton from '../buttons/WaitlistButton'
 import { inter } from '../../app/fonts'
@@ -28,6 +28,7 @@ const HeroSection = () => {
         <Image
             src={heroHands}
             alt=''
+            placeholder='blur'
             className='w-1/2 absolute top-0 right-0 '
         />
 
